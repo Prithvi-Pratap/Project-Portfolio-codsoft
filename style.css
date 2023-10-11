@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "gilroy";
+  ::selection{
+    background-color: #fff;
+    color: #7b41f9;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.loader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  z-index: 99;
+}
+.purplescr {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #7b41f9;
+}
+
+.topheading {
+  padding: 20px;
+}
+
+.topheading h6 {
+  font-family: "gurnie";
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+.loader h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Gilroy", sans-serif !important;
+  position: absolute;
+  font-size: 5vw;
+  font-weight: 300;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader h1 .parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loader h1 .s2 {
+  font-family: "Kalam", cursive;
+  color: #7b41f9;
+}
+
+.reveal .parent {
+  display: block;
+  overflow: hidden;
+}
+
+.reveal .parent .child {
+  display: block;
+  
+}
+
+.child span {
+  display: inline-block;
+  opacity: 1;
+}
+
+.back {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow-y: scroll;
+}
+.back::-webkit-scrollbar {
+    display: none;
+}
+
+.back{
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top {
+    pointer-events: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.348);
+}
+
+.workingar {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  height: 100vh;
+  max-width: 1920px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+nav .nleft {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nright a {
+    pointer-events: all;
+    font-weight: 600;
+    color: #7b41f9;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "gilroy";
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nleft a {
+    pointer-events: all;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "gilroy";
+    text-transform: uppercase;
+}
+.nleft #logo {
+    font-size: 38px;
+    font-family: "gilroy";
+    font-weight: 500;
+}
+#logo span {
+  font-size: 33px;
+  font-family: "Meddon", cursive;
+  color: #7b41f9;
+  font-style: italic;
+}
+
+.hero {
+    position: absolute;
+    padding-top: 20px;
+    top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroleft {
+  width: 50%;
+
+}
+
+.heroleft-in {
+    height: 9vw;
+    overflow: hidden;
+}
+
+.heroleft-in h1 {
+    font-family: "kajiro";
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 9vw;
+    line-height: 1.1;
+    font-stretch: expanded;
+}
+.heroleft button {
+    margin-top: 20px;
+    font-size: 3.2vw;
+    font-weight: 100;
+    color: #7a3efc;
+    padding: 0.4vw 3vw;
+    font-family: "kajiro";
+    letter-spacing: 2px;
+    pointer-events: all;
+}
+.heroright {
+    width: 22%;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.heroright p{
+    margin-bottom:1.4vw;
+    font-size: 11px;
+    text-align: right;
+    font-weight: 300;
+    line-height: 12px;
+    /* font-stretch: condensed;     */
+}
+.heroright .img{
+    content: url(https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGdyZWV0aW5nJTIwbGFwdG9wfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60);
+    margin-bottom: 1.4vw;
+    width:100%;
+    height: 110px;
+    background-color: green;
+}
+.heroright p:nth-child(3){
+    margin-bottom: 4vw;
+}
+.heroright p:nth-child(4){
+    margin-bottom:0;
+}
